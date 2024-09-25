@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Heebo", sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+header {
+  background-color: #fff;
+  height: 80px;
+}
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 80px;
+  padding: 0 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header #navbar .navbrand {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+
+  display: flex;
+  align-items: center;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+  color: #a09393;
+  transition: color 0.8;
+}
+
+main #banner .banner-content-btn:hover {
+  background: #777;
+  transition: color 0.3;
+}
+
+header #navbar .burguer-menu {
+  display: none;
+}
+@media (max-width: 720px) {
+  header #navbar .burguer-menu {
+    display: block;
+  }
+  header #navbar .nav-list {
+    display: none;
+  }
+}
+
+/*SECTION BANNER*/
+
+main {
+  margin-top: 6rem;
+}
+
+main #banner {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1200px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-banner {
+  width: 500px;
+}
+
+main #banner .banner-content .banner-content-title {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 40px;
+}
+
+main #banner .banner-content .banner-content-subtitle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 400px;
+  margin-bottom: 38px;
+}
+
+main #banner .banner-content-btn {
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 8px 24px;
+  border: none;
+}
+
+main #banner .banner-content .banner-image {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media (max-width: 860px) {
+  main #banner {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+  main #banner .banner-content {
+    text-align: center;
+  }
+}
+
+/* SECTION POSTS */
+
+section + #posts {
+  margin-top: 71px;
+  background: #ceedf6;
+}
+
+#posts .posts-content {
+  padding: 20px 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#posts .posts-content .posts-content-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#posts .posts-content .posts-content-header .section-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.section-title-main {
+  /* border: solid 2px red; */
+  padding: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#posts .posts-content .posts-content-header .view-all-link {
+  text-decoration: none;
+  color: #00abcc;
+  margin-left: 20px;
+}
+
+#posts .posts-content .posts-cards {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+#posts .posts-content .posts-cards .posts-card {
+  background-color: #fff;
+  padding: 24px;
+}
+
+#posts .posts-content .posts-cards .posts-card h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 37px;
+}
+#posts .posts-content .posts-cards .posts-card span {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  display: block;
+}
+
+@media (max-width: 720px) {
+  #posts .posts-content .posts-cards {
+    flex-direction: column;
+  }
+}
