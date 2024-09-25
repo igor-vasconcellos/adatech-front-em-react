@@ -1,0 +1,62 @@
+/* CSS: CASCADING STYLE SHEETS*/
+
+.title {
+    color: blue;
+    font-size: 45px;
+    font-weight: 500;
+    font-family: JetBrains Mono;
+    padding: 15px;
+    margin-left: 40px;
+    border: 5px solid salmon;
+    border-radius: 20px;
+} 
+
+.sub-title {
+    color: rgba(128, 255, 0, 0.756);
+    font-size: 22px;
+    font-weight: 500;
+    font-family: JetBrains Mono;
+    padding: 15px;
+    margin-left: 40px;
+}
+#principais-estilos .paragrafo{
+    font-family: JetBrains Mono;
+    color:blueviolet;
+    list-style: 1.5;
+    padding: 15px;
+    margin-left: 40px;
+}
+
+#flex-box .container{  
+    display: flex;
+    flex-direction: row; /*Alinhamento horinztal*/
+    gap: 20px; /*Espaço entre box*/
+
+    justify-content: center; /*Alinhamento central*/
+    align-items: flex-start;
+}
+
+#flex-box .container .box{
+    width: 200px;
+    height: 200px; 
+    background: green;
+}
+
+#flex-box .container .box-2{
+    width: 200px;
+    height: 200px; 
+    background: blue;
+}
+
+#grid-layout .container-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /*Espaço entre box*/
+    
+}
+
+#grid-layout .container-grid .caixa{
+    width: 200px;
+    height: 200px; 
+    background: violet;
+}
